@@ -1,0 +1,267 @@
+/* Estilos para la sección de donación */
+.donar {
+    background-color: #fffbf1;
+    padding: 40px 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 700px;
+    margin: 50px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.donacion-card {
+    display: inline-block;
+    width: 90%;
+    margin: 50px;
+    border: 2px solid #ff6f00;
+    border-radius: 10px;
+    padding: 2px;
+}
+
+.donacion-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.donar h2 {
+    font-size: 2.5em;
+    color: #ff6f00;
+}
+
+.donar p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.donar form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.donar label {
+    font-size: 1.1em;
+    margin-top: 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+.donar input, .donar select {
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+    border: 1px solid #ff6f00;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.donar input[type="number"]:focus, .donar select:focus {
+    outline: none;
+    border-color: #ff8f00;
+}
+
+.donar .btn-donar {
+    background-color: #ff6f00;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 1.2em;
+    width: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.donar .btn-donar:hover {
+    background-color: #ff8f00;
+}
+
+/* Estilo de mensaje de confirmación/error */
+.mensaje {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+.mensaje.success {
+    color: green;
+}
+
+.mensaje.error {
+    color: red;
+}
+
+/* Estilo del popup */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+.popup h2 {
+    color: #ff6f00;
+}
+
+.popup .btn {
+    background-color: #ff6f00;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.popup .close-popup {
+    background-color: #ff6f00;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.popup .close-popup:hover {
+    background-color: #ff8f00;
+}
+
+.adoptar-form {
+    padding: 20px;
+    background-color: #fff8e1;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.adoptar-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.adoptar-form input, .adoptar-form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ff6f00;
+    border-radius: 5px;
+}
+
+.adoptar-form .btn {
+    background-color: #ff6f00;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+}
+
+.adoptar-form .mensaje {
+    margin-top: 20px;
+    font-size: 1.1em;
+}
+
+/* Efecto de hover para botones */
+.btn {
+    background-color: #ff6f00;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ff8f00;
+    transform: scale(1.1);
+}
+
+/* Responsividad */
+@media (max-width: 767px) {
+    /* Ajustar el ancho de la sección de donación */
+    .donar {
+        padding: 20px 10px;
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    /* Ajustar los tamaños de los textos */
+    .donar h2 {
+        font-size: 2em;
+    }
+
+    .donar p {
+        font-size: 1em;
+    }
+
+    /* Asegurar que las imágenes de la tarjeta de donación ocupen el 100% */
+    .donacion-card img {
+        width: 100%;
+    }
+
+    /* Asegurar que los botones sean más grandes */
+    .donar .btn-donar {
+        width: 80%;
+    }
+
+    /* Ajustar formulario de donación */
+    .donar input, .donar select {
+        padding: 12px;
+    }
+
+    .adoptar-form .btn {
+        width: 100%;
+    }
+}
+
+/* Responsividad para tabletas y pantallas medianas */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .donar {
+        width: 90%;
+    }
+
+    .donar h2 {
+        font-size: 2.2em;
+    }
+
+    .donar p {
+        font-size: 1.1em;
+    }
+
+    .donar .btn-donar {
+        width: 60%;
+    }
+}
+
+/* Responsividad para pantallas grandes */
+@media (min-width: 1025px) {
+    /* Ajustar el ancho de los botones */
+    .donar .btn-donar {
+        width: 50%;
+    }
+
+    .donar h2 {
+        font-size: 2.5em;
+    }
+}

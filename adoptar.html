@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css"> 
+</head>
+<body>
+    <section class="adoptar-form">
+        <h2>Solicitar Adopción</h2>
+        <form id="adoptar-form">
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="perrito">¿Qué perrito te gustaría adoptar?</label>
+            <select id="perrito" name="perrito" required>
+                <option value="max">Max</option>
+                <option value="luna">Luna</option>
+            </select>
+            
+            <button type="submit" class="btn">Enviar Solicitud</button>
+        </form>
+        <div id="mensaje" class="mensaje"></div>
+    </section>
+    <section class="adoptar-form">
+        <h2>Solicitar Adopción</h2>
+        <form id="adoptar-form">
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="gatito">¿Qué gatito te gustaría adoptar?</label>
+            <select id="gatito" name="gatito" required>
+                <option value="layla">layla</option>
+                <option value="jacinta">jacinta</option>
+            </select>
+            
+            <button type="submit" class="btn">Enviar Solicitud</button>
+        </form>
+        <div id="mensaje" class="mensaje"></div>
+    </section>
+    <script src="js/adoptar.js"></script>
+</body>
+</html>

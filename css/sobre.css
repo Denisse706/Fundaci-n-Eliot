@@ -1,0 +1,337 @@
+/* Estilo general de la sección sobre la fundación */
+.sobre-fundacion {
+    background-color: #fce7c1;
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.sobre-fundacion h2 {
+    font-size: 2.5em;
+    color: #ff6f00;
+    margin-bottom: 20px;
+}
+
+.sobre-fundacion p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.historia {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.imagen-historia img {
+    max-width: 50%;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+
+.texto-historia {
+    max-width: 50%;
+    text-align: left;
+}
+
+.texto-historia h3 {
+    font-size: 2em;
+    color: #ff6f00;
+    margin-bottom: 10px;
+}
+
+.impacto {
+    background-color: #fff8e1;
+    padding: 20px;
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.impacto h3 {
+    font-size: 2.2em;
+    color: #ff6f00;
+}
+
+/* Estilo para los testimonios */
+.testimonios {
+    padding: 40px 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonios h3 {
+    font-size: 2.5em;
+    color: #ff6f00;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Estilo para cada testimonio */
+.testimonio {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    color: #333;
+    line-height: 1.5;
+}
+
+.testimonio p {
+    font-style: italic;
+}
+
+.testimonio:before {
+    content: "“";
+    font-size: 3em;
+    color: #ff6f00;
+    position: absolute;
+    left: -20px;
+    top: -10px;
+}
+
+.testimonio:after {
+    content: "”";
+    font-size: 3em;
+    color: #ff6f00;
+    position: absolute;
+    right: -20px;
+    bottom: -10px;
+}
+
+/* Estilo para las imágenes de los adoptantes */
+.pareja1-card, .pareja2-card {
+    display: inline-block;
+    width: 45%;
+    margin: 20px 2.5%;
+    text-align: center;
+}
+
+.pareja1-card img, .pareja2-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(30px); /* Inicialmente desplazadas hacia abajo */
+    opacity: 0; /* Inicialmente invisibles */
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+/* Animaciones cuando el usuario hace scroll */
+.pareja1-card img, .pareja2-card img {
+    transform: translateY(30px);
+    opacity: 0;
+}
+
+.pareja1-card img.visible, .pareja2-card img.visible {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Para que los testimonios se alineen bien */
+.testimonio,
+.pareja1-card,
+.pareja2-card {
+    display: inline-block;
+    vertical-align: top;
+    width: 45%;
+    margin: 0 2.5%;
+    text-align: center;
+}
+
+/* Estilo del popup */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+.popup h2 {
+    color: #ff6f00;
+}
+
+.popup .btn {
+    background-color: #ff6f00;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.popup .close-popup {
+    background-color: #ff6f00;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.popup .close-popup:hover {
+    background-color: #ff8f00;
+}
+
+.adoptar-form {
+    padding: 20px;
+    background-color: #fff8e1;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.adoptar-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.adoptar-form input, .adoptar-form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ff6f00;
+    border-radius: 5px;
+}
+
+.adoptar-form .btn {
+    background-color: #ff6f00;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+}
+
+.adoptar-form .mensaje {
+    margin-top: 20px;
+    font-size: 1.1em;
+}
+
+/* Efecto de hover para botones */
+.btn {
+    background-color: #ff6f00;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ff8f00;
+    transform: scale(1.1);
+}
+
+/* Consultas de medios - Diseño Responsivo */
+
+/* Para dispositivos pequeños (móviles) */
+@media (max-width: 767px) {
+    .sobre-fundacion h2 {
+        font-size: 2em;
+    }
+
+    .sobre-fundacion p {
+        font-size: 1.1em;
+    }
+
+    .historia {
+        flex-direction: column; /* Cambiar a columna para móviles */
+        text-align: center;
+    }
+
+    .imagen-historia img, .texto-historia {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .impacto h3 {
+        font-size: 2em;
+    }
+
+    .testimonios h3 {
+        font-size: 2.2em;
+    }
+
+    .testimonio,
+    .pareja1-card,
+    .pareja2-card {
+        width: 100%; /* Tarjetas ocupan todo el ancho */
+        margin: 10px 0;
+    }
+
+    .popup-content {
+        width: 90%;
+    }
+
+    .adoptar-form {
+        width: 95%; /* Formulario se adapta al ancho completo */
+    }
+}
+
+/* Para dispositivos medianos (tabletas y pantallas de 768px a 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .sobre-fundacion h2 {
+        font-size: 2.2em;
+    }
+
+    .historia {
+        flex-direction: row; /* Regresar a fila */
+    }
+
+    .imagen-historia img,
+    .texto-historia {
+        max-width: 50%; /* Ajustar la imagen y texto */
+    }
+
+    .impacto h3 {
+        font-size: 2.1em;
+    }
+
+    .testimonios h3 {
+        font-size: 2.4em;
+    }
+
+    .adoptar-form {
+        width: 85%;
+    }
+}
+
+/* Para dispositivos grandes (escritorios) */
+@media (min-width: 1025px) {
+    .sobre-fundacion h2 {
+        font-size: 2.5em;
+    }
+
+    .testimonios h3 {
+        font-size: 2.5em;
+    }
+
+    .pareja1-card, .pareja2-card {
+        width: 45%; /* Ajustar para pantallas más grandes */
+    }
+}
