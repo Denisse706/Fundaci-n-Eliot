@@ -1,4 +1,3 @@
-// Mostrar un popup de bienvenida cuando se carga la página
 document.addEventListener("DOMContentLoaded", function() {
     // Crear el popup
     let popup = document.createElement("div");
@@ -11,7 +10,6 @@ document.addEventListener("DOMContentLoaded", function() {
             <button class="close-popup">Cerrar</button>
         </div>
     `;
-    // Añadir el popup al body
     document.body.appendChild(popup);
 
     // Función para cerrar el popup
@@ -19,18 +17,15 @@ document.addEventListener("DOMContentLoaded", function() {
         popup.style.display = "none";
     });
 });
-// Validación del formulario de donación
 document.getElementById("donar-form").addEventListener("submit", function(event) {
     event.preventDefault(); // Evita que el formulario se envíe de inmediato
     
-    // Obtener los valores de los campos
     let nombre = document.getElementById("nombre").value;
     let email = document.getElementById("email").value;
     let monto = document.getElementById("monto").value;
     let metodo = document.getElementById("metodo").value;
     let mensajeDiv = document.getElementById("mensaje");
 
-    // Validación de los campos
     if (nombre === "" || email === "" || monto === "" || metodo === "") {
         mensajeDiv.textContent = "Por favor, completa todos los campos.";
         mensajeDiv.style.color = "red";
@@ -50,4 +45,5 @@ document.getElementById("donar-form").addEventListener("submit", function(event)
         // Reseteamos el formulario
         document.getElementById("donar-form").reset();
     }
+
 });
