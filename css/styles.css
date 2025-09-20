@@ -1,7 +1,7 @@
 html {
     scroll-behavior: smooth;
 }
-
+      <img src="imagenes/Logo.png" alt="FUNDACION ELIOT">
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -247,4 +247,5 @@ footer {
     }
 
 }
+
 
