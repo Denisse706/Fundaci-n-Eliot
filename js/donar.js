@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // Crear el popup
+
     let popup = document.createElement("div");
     popup.classList.add("popup");
     popup.innerHTML = `
@@ -12,13 +12,12 @@ document.addEventListener("DOMContentLoaded", function() {
     `;
     document.body.appendChild(popup);
 
-    // Función para cerrar el popup
     document.querySelector(".close-popup").addEventListener("click", function() {
         popup.style.display = "none";
     });
 });
 document.getElementById("donar-form").addEventListener("submit", function(event) {
-    event.preventDefault(); // Evita que el formulario se envíe de inmediato
+    event.preventDefault(); 
     
     let nombre = document.getElementById("nombre").value;
     let email = document.getElementById("email").value;
@@ -42,8 +41,9 @@ document.getElementById("donar-form").addEventListener("submit", function(event)
         mensajeDiv.classList.remove("error");
         mensajeDiv.classList.add("success");
 
-        // Reseteamos el formulario
+
         document.getElementById("donar-form").reset();
     }
 
 });
+
