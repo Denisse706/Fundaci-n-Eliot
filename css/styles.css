@@ -13,25 +13,23 @@ body {
 header {
     background-color: #ff6f00;
     color: white;
-    padding: 20px;
+    padding: 50px 0px;
     text-align: center;
 }
 
-header nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-header nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-header nav ul li a {
-    color: white;
+header a{
+    padding: 5px 12px;
     text-decoration: none;
     font-weight: bold;
+    color:rgb(82, 26, 26)
 }
+
+header a:hover{
+    color: #0f1ef0;
+    text-decoration: none;
+}
+
+    
 
 .hero {
     background-image: url('images/perrito-heroe.jpg');
@@ -242,6 +240,7 @@ footer {
     }
 
 }
+
 
 
 
