@@ -1,4 +1,3 @@
-// Mostrar un popup de bienvenida cuando se carga la página
 document.addEventListener("DOMContentLoaded", function() {
     // Crear el popup
     let popup = document.createElement("div");
@@ -11,7 +10,6 @@ document.addEventListener("DOMContentLoaded", function() {
             <button class="close-popup">Cerrar</button>
         </div>
     `;
-    // Añadir el popup al body
     document.body.appendChild(popup);
 
     // Función para cerrar el popup
@@ -28,7 +26,6 @@ document.getElementById("contact-form").addEventListener("submit", function(even
     let mensaje = document.getElementById("mensaje").value;
     let confirmacionDiv = document.getElementById("mensaje-confirmacion");
 
-    // Validación básica de campos
     if (nombre === "" || email === "" || mensaje === "") {
         confirmacionDiv.textContent = "Por favor, completa todos los campos.";
         confirmacionDiv.classList.remove("success");
@@ -38,7 +35,7 @@ document.getElementById("contact-form").addEventListener("submit", function(even
         confirmacionDiv.classList.remove("error");
         confirmacionDiv.classList.add("success");
 
-        // Limpiar el formulario
         document.getElementById("contact-form").reset();
     }
+
 });
