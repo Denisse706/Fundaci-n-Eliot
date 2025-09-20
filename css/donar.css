@@ -1,4 +1,4 @@
-/* Estilos para la sección de donación */
+
 .donar {
     background-color: #fffbf1;
     padding: 40px 20px;
@@ -79,7 +79,6 @@
     background-color: #ff8f00;
 }
 
-/* Estilo de mensaje de confirmación/error */
 .mensaje {
     margin-top: 20px;
     font-size: 1.2em;
@@ -93,7 +92,6 @@
     color: red;
 }
 
-/* Estilo del popup */
 .popup {
     position: fixed;
     top: 0;
@@ -182,7 +180,6 @@
     font-size: 1.1em;
 }
 
-/* Efecto de hover para botones */
 .btn {
     background-color: #ff6f00;
     color: white;
@@ -197,16 +194,14 @@
     transform: scale(1.1);
 }
 
-/* Responsividad */
 @media (max-width: 767px) {
-    /* Ajustar el ancho de la sección de donación */
+
     .donar {
         padding: 20px 10px;
         width: 95%;
         margin: 20px auto;
     }
 
-    /* Ajustar los tamaños de los textos */
     .donar h2 {
         font-size: 2em;
     }
@@ -215,17 +210,16 @@
         font-size: 1em;
     }
 
-    /* Asegurar que las imágenes de la tarjeta de donación ocupen el 100% */
+
     .donacion-card img {
         width: 100%;
     }
 
-    /* Asegurar que los botones sean más grandes */
+
     .donar .btn-donar {
         width: 80%;
     }
 
-    /* Ajustar formulario de donación */
     .donar input, .donar select {
         padding: 12px;
     }
@@ -235,7 +229,7 @@
     }
 }
 
-/* Responsividad para tabletas y pantallas medianas */
+
 @media (min-width: 768px) and (max-width: 1024px) {
     .donar {
         width: 90%;
@@ -254,9 +248,9 @@
     }
 }
 
-/* Responsividad para pantallas grandes */
+
 @media (min-width: 1025px) {
-    /* Ajustar el ancho de los botones */
+ 
     .donar .btn-donar {
         width: 50%;
     }
@@ -264,4 +258,5 @@
     .donar h2 {
         font-size: 2.5em;
     }
+
 }
