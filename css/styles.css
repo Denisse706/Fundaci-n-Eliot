@@ -214,10 +214,7 @@ footer {
         margin: 10px 0;
     }
 
-    header nav ul li {
-        display: block; 
-        margin-bottom: 10px;
-    }
+
 
     .popup-content {
         width: 90%; 
@@ -237,10 +234,6 @@ footer {
     .perrito-card, .gatito-card {
         width: 45%; 
 
-    header nav ul li {
-        display: inline-block;
-        margin-right: 15px;
-    }
 
     .adoptar-form {
         width: 85%; 
@@ -258,6 +251,7 @@ footer {
     }
 
 }
+
 
 
 
