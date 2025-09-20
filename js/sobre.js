@@ -1,4 +1,3 @@
-// Mostrar un popup de bienvenida cuando se carga la página
 document.addEventListener("DOMContentLoaded", function() {
     // Crear el popup
     let popup = document.createElement("div");
@@ -11,7 +10,6 @@ document.addEventListener("DOMContentLoaded", function() {
             <button class="close-popup">Cerrar</button>
         </div>
     `;
-    // Añadir el popup al body
     document.body.appendChild(popup);
 
     // Función para cerrar el popup
@@ -26,7 +24,6 @@ document.addEventListener("scroll", function() {
     const testimonios = document.querySelectorAll('.testimonio');
     const viewportHeight = window.innerHeight;
 
-    // Animación para la imagen de la pareja 1
     if (pareja1Img) {
         const rect1 = pareja1Img.getBoundingClientRect();
         if (rect1.top < viewportHeight * 0.8) {
@@ -34,7 +31,6 @@ document.addEventListener("scroll", function() {
         }
     }
 
-    // Animación para la imagen de la pareja 2
     if (pareja2Img) {
         const rect2 = pareja2Img.getBoundingClientRect();
         if (rect2.top < viewportHeight * 0.8) {
@@ -42,7 +38,6 @@ document.addEventListener("scroll", function() {
         }
     }
 
-    // Animación para los testimonios
     testimonios.forEach(testimonio => {
         const rect = testimonio.getBoundingClientRect();
         if (rect.top < viewportHeight * 0.8) {
@@ -54,8 +49,6 @@ document.addEventListener("scroll", function() {
         }
     });
 });
-
-// Aplicar el efecto por defecto cuando la página se carga
 document.addEventListener("DOMContentLoaded", function() {
     const pareja1Img = document.querySelector(".pareja1-card img");
     const pareja2Img = document.querySelector(".pareja2-card img");
@@ -73,4 +66,5 @@ document.addEventListener("DOMContentLoaded", function() {
         testimonio.style.transform = "translateY(30px)";
         testimonio.style.opacity = 0;
     });
+
 });
