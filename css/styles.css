@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -240,4 +244,5 @@ footer {
     .hero h1 {
         font-size: 3em;
     }
+
 }
