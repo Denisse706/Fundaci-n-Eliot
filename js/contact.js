@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // Crear el popup
+
     let popup = document.createElement("div");
     popup.classList.add("popup");
     popup.innerHTML = `
@@ -12,13 +12,12 @@ document.addEventListener("DOMContentLoaded", function() {
     `;
     document.body.appendChild(popup);
 
-    // Función para cerrar el popup
     document.querySelector(".close-popup").addEventListener("click", function() {
         popup.style.display = "none";
     });
 });
 document.getElementById("contact-form").addEventListener("submit", function(event) {
-    event.preventDefault(); // Prevenir el envío del formulario de forma predeterminada
+    event.preventDefault(); 
     
     let nombre = document.getElementById("nombre").value;
     let email = document.getElementById("email").value;
@@ -39,3 +38,4 @@ document.getElementById("contact-form").addEventListener("submit", function(even
     }
 
 });
+
