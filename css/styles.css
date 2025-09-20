@@ -85,7 +85,6 @@ footer {
     padding: 20px;
 }
 
-/* Estilo del popup */
 .popup {
     position: fixed;
     top: 0;
@@ -169,7 +168,7 @@ footer {
     font-size: 1.1em;
 }
 
-/* Efecto de hover para botones */
+
 .btn {
     background-color: #ff6f00;
     color: white;
@@ -184,12 +183,9 @@ footer {
     transform: scale(1.1);
 }
 
-/* Consultas de medios - Diseño Responsivo */
-
-/* Para dispositivos pequeños (móviles) */
 @media (max-width: 767px) {
     .hero h1 {
-        font-size: 2em; /* Título más pequeño */
+        font-size: 2em; 
         padding: 50px 20px;
     }
 
@@ -198,33 +194,32 @@ footer {
     }
 
     .perrito-card, .gatito-card {
-        width: 100%; /* Las tarjetas ocupan todo el ancho */
+        width: 100%;
         margin: 10px 0;
     }
 
     header nav ul li {
-        display: block; /* Menú en columnas */
+        display: block; 
         margin-bottom: 10px;
     }
 
     .popup-content {
-        width: 90%; /* El contenido del popup ocupa más espacio */
+        width: 90%; 
     }
 
     .adoptar-form {
-        width: 95%; /* El formulario se adapta a pantallas pequeñas */
+        width: 95%;
     }
 }
 
-/* Para dispositivos medianos (tabletas y pantallas de 768px a 1024px) */
+
 @media (min-width: 768px) and (max-width: 1024px) {
     .hero h1 {
-        font-size: 2.5em; /* Título intermedio */
+        font-size: 2.5em; 
     }
 
     .perrito-card, .gatito-card {
-        width: 45%; /* Las tarjetas ocupan el 45% del ancho */
-    }
+        width: 45%; 
 
     header nav ul li {
         display: inline-block;
@@ -232,14 +227,14 @@ footer {
     }
 
     .adoptar-form {
-        width: 85%; /* Formulario ajustado */
+        width: 85%; 
     }
 }
 
-/* Para dispositivos grandes (escritorios) */
+
 @media (min-width: 1025px) {
     .perrito-card, .gatito-card {
-        width: 45%; /* Tarjetas ocupan 45% del ancho en pantallas grandes */
+        width: 45%; 
     }
 
     .hero h1 {
@@ -247,5 +242,6 @@ footer {
     }
 
 }
+
 
 
