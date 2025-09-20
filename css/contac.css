@@ -1,4 +1,4 @@
-/* Estilo de la sección de contacto */
+
 .contacto {
     background-color: #f0f4f8;
     padding: 20px 20px;
@@ -77,7 +77,6 @@
     color: red;
 }
 
-/* Estilo para la información de contacto */
 .informacion-contacto {
     margin-top: 50px;
 }
@@ -128,7 +127,6 @@
     text-decoration: underline;
 }
 
-/* Estilo del popup */
 .popup {
     position: fixed;
     top: 0;
@@ -217,7 +215,6 @@
     font-size: 1.1em;
 }
 
-/* Efecto de hover para botones */
 .btn {
     background-color: #ff6f00;
     color: white;
@@ -232,7 +229,7 @@
     transform: scale(1.1);
 }
 
-/* Responsividad */
+
 @media (max-width: 767px) {
     /* Ajustar el ancho de la sección de contacto */
     .contacto {
@@ -247,7 +244,6 @@
         font-size: 1em;
     }
 
-    /* Ajustar el formulario de contacto */
     .formulario-contacto {
         padding: 30px;
         width: 90%;
@@ -278,7 +274,7 @@
     }
 }
 
-/* Responsividad para tabletas y pantallas medianas */
+
 @media (min-width: 768px) and (max-width: 1024px) {
     .contacto h2 {
         font-size: 2.2em;
@@ -308,7 +304,6 @@
     }
 }
 
-/* Responsividad para pantallas grandes */
 @media (min-width: 1025px) {
     .formulario-contacto {
         padding: 60px;
@@ -318,4 +313,5 @@
     .formulario-contacto button {
         width: 60%;
     }
+
 }
