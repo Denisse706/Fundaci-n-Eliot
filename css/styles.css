@@ -13,8 +13,16 @@ body {
 header {
     background-color: #ff6f00;
     color: white;
-    padding: 50px 0px;
+    padding: 20px;
     text-align: center;
+}
+header .logo {
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: black;
+    font-size: 3rem;
+
 }
 
 header a{
@@ -240,6 +248,7 @@ footer {
     }
 
 }
+
 
 
 
