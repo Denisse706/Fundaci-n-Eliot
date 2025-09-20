@@ -39,14 +39,24 @@ header a:hover{
 
     
 
-.hero {
-    background-image: url('images/perrito-heroe.jpg');
-    background-size: cover;
-    color: white;
-    padding: 100px 20px;
-    text-align: center;
-}
+#hero {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 90vh;
+  color: white;
 
+
+  background-image:
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("imagenes/Logo.png");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
 .hero h1 {
     font-size: 3em;
 }
@@ -248,6 +258,7 @@ footer {
     }
 
 }
+
 
 
 
