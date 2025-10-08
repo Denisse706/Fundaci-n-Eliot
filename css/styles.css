@@ -15,7 +15,11 @@ header {
     color: white;
     padding: 20px;
     text-align: center;
-}
+ 
+ background-image:
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("imagenes/Logo.png");
+    
 header .logo {
     margin: 0;
     padding: 25px 30px;
@@ -249,6 +253,7 @@ footer {
     }
 
 }
+
 
 
 
